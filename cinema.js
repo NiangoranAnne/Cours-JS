@@ -10,9 +10,16 @@ for ( let age = 11; age <= 20; age++ )
     prix = 1500; 
     billetsEnfant++;
     }
-    else
+    else if( age>=16 && age<=17)
     {
     prix = 2500; 
+    billetsAdulte++;
+    }
+    
+
+    else
+    {
+    prix = 2500-500; 
     billetsAdulte++;
     }
 recette=recette + prix;
