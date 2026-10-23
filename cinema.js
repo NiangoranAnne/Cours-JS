@@ -1,33 +1,12 @@
 let recette = 0;
-let billetsEnfant = 0;
-let billetsAdulte = 0;
-
-for ( let age = 11; age <= 20; age++ ) 
-{let prix ;
-
-    if( age < 16) 
-    { 
-    prix = 1500; 
-    billetsEnfant++;
-    }
-    else if( age>=16 && age<=17)
-    {
-    prix = 2500; 
-    billetsAdulte++;
-    }
-    
-
-    else
-    {
-    prix = 2500-500; 
-    billetsAdulte++;
-    }
-recette=recette + prix;
-console.log("recette totale : " + recette + " fcfa " );
+let billetsmoins16 = 0;
+let billetsaumoins16 = 0;
+let prixbilletsmoins16= 1500;
+let prixbilletsaumoins16=2500 ;
+for ( let age = 11; age <= 20; age++ ){
+    if(age<16){
+        console.log(`la personne de ${age} ans a un billet qui coute ${prixbilletsmoins16} FCFA`);
+    }else {
+        console.log(`la personne de ${age} ans a un billlet qui coute ${prixbilletsaumoins16} FCFA`); 
+    }   
 }
-console.log("billets à 1500 fcfa : "  + billetsEnfant);
-console.log(" Billets à 2500 fcfa : " + billetsAdulte );
-
-
-
-
